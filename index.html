@@ -4,33 +4,58 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UMWSC | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            michigan: {
+              blue: '#00274C',
+              maize: '#FFCB05'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-white text-gray-900">
-  <header class="bg-blue-900 text-white">
+<body class="bg-white text-michigan-blue">
+
+  <header class="bg-michigan-blue text-white">
     <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <div class="text-2xl font-bold">UMWSC</div>
-      <ul class="flex space-x-4 text-sm font-medium">
-        <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
-        <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
-        <li><a href="roster.html" class="hover:text-yellow-400">Roster</a></li>
-        <li><a href="schedule.html" class="hover:text-yellow-400">Schedule</a></li>
-        <li><a href="join.html" class="hover:text-yellow-400">Join</a></li>
-        <li><a href="media.html" class="hover:text-yellow-400">Media</a></li>
-        <li><a href="store.html" class="hover:text-yellow-400">Merch</a></li>
-        <li><a href="contact.html" class="hover:text-yellow-400">Contact</a></li>
+      <ul class="flex space-x-4 text-sm font-semibold">
+        <li><a href="index.html" class="hover:text-michigan-maize">Home</a></li>
+        <li><a href="about.html" class="hover:text-michigan-maize">About</a></li>
+        <li><a href="roster.html" class="hover:text-michigan-maize">Roster</a></li>
+        <li><a href="schedule.html" class="hover:text-michigan-maize">Schedule</a></li>
+        <li><a href="join.html" class="hover:text-michigan-maize">Join</a></li>
+        <li><a href="media.html" class="hover:text-michigan-maize">Media</a></li>
+        <li><a href="store.html" class="hover:text-michigan-maize">Merch</a></li>
+        <li><a href="contact.html" class="hover:text-michigan-maize">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="flex flex-col items-center justify-center text-center py-20 px-4 bg-yellow-100">
-    <h1 class="text-4xl font-extrabold text-blue-900 mb-4">Welcome to the University of Michigan Women's Soccer Club</h1>
-    <p class="text-lg text-gray-700 mb-6">Where passion meets the pitch.</p>
-    <a href="join.html" class="bg-blue-900 text-white px-6 py-2 rounded-xl hover:bg-blue-700 transition">Join the Team</a>
+  <main class="flex flex-col items-center justify-center text-center py-20 px-4 bg-white">
+    <h1 class="text-4xl font-extrabold text-michigan-blue mb-4">Welcome to the University of Michigan Women's Soccer Club</h1>
+    <p class="text-lg text-michigan-blue mb-6">Where passion meets the pitch.</p>
+    <a href="join.html" class="bg-michigan-blue text-white px-6 py-2 rounded-xl hover:text-michigan-maize transition">Join the Team</a>
   </main>
 
-  <footer class="bg-blue-900 text-white text-center py-4">
+  <footer class="bg-michigan-blue text-white text-center py-4">
     <p>&copy; 2025 University of Michigan Women's Soccer Club</p>
   </footer>
+
 </body>
 </html>
